@@ -1,0 +1,6 @@
+2022-01-19 15:48:16,446:INFO:6140:22588:apiritif:Total workers: 1
+2022-01-19 15:48:17,523:INFO:24936:23948:apiritif:Adding worker: idx=0	concurrency=1	results=C:\Users\alfonso.de.cicco\PycharmProjects\AppiumSandbox\Test\Taurus\2022-01-19_15-48-13.719968\apiritif.0.csv
+The server is running?True
+True
+2022-01-19 15:49:14,796:INFO:24936:23948:apiritif:Workers finished, awaiting result writer
+2022-01-19 15:49:14,797:INFO:24936:23948:apiritif:Results written, shutting down

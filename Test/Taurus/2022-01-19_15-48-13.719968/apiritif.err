@@ -1,0 +1,75 @@
+c:\users\alfonso.de.cicco\pycharmprojects\appiumsandbox\venv\lib\site-packages\apiritif\loadgen.py:96: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  self.setDaemon(True)
+c:\users\alfonso.de.cicco\pycharmprojects\appiumsandbox\venv\lib\site-packages\apiritif\loadgen.py:97: DeprecationWarning: setName() is deprecated, set the name attribute instead
+  self.setName(self.__class__.__name__)
+Exception in thread Supervisor:
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\alfonso.de.cicco\AppData\Local\Programs\Python\Python310\lib\multiprocessing\pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "C:\Users\alfonso.de.cicco\AppData\Local\Programs\Python\Python310\lib\multiprocessing\pool.py", line 48, in mapstar
+    return list(map(*args))
+  File "c:\users\alfonso.de.cicco\pycharmprojects\appiumsandbox\venv\lib\site-packages\apiritif\loadgen.py", line 58, in spawn_worker
+    worker.start()
+  File "c:\users\alfonso.de.cicco\pycharmprojects\appiumsandbox\venv\lib\site-packages\apiritif\loadgen.py", line 159, in start
+    self.map(self.run_nose, params)
+  File "C:\Users\alfonso.de.cicco\AppData\Local\Programs\Python\Python310\lib\multiprocessing\pool.py", line 364, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+  File "C:\Users\alfonso.de.cicco\AppData\Local\Programs\Python\Python310\lib\multiprocessing\pool.py", line 771, in get
+    raise self._value
+  File "C:\Users\alfonso.de.cicco\AppData\Local\Programs\Python\Python310\lib\multiprocessing\pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "C:\Users\alfonso.de.cicco\AppData\Local\Programs\Python\Python310\lib\multiprocessing\pool.py", line 48, in mapstar
+    return list(map(*args))
+  File "c:\users\alfonso.de.cicco\pycharmprojects\appiumsandbox\venv\lib\site-packages\apiritif\loadgen.py", line 206, in run_nose
+    ApiritifTestProgram(config=config)
+  File "c:\users\alfonso.de.cicco\pycharmprojects\appiumsandbox\venv\lib\site-packages\apiritif\loadgen.py", line 252, in __init__
+    super(ApiritifTestProgram, self).__init__(*args, **kwargs)
+  File "c:\users\alfonso.de.cicco\pycharmprojects\appiumsandbox\venv\lib\site-packages\nose\core.py", line 118, in __init__
+    unittest.TestProgram.__init__(
+  File "C:\Users\alfonso.de.cicco\AppData\Local\Programs\Python\Python310\lib\unittest\main.py", line 100, in __init__
+    self.parseArgs(argv)
+  File "c:\users\alfonso.de.cicco\pycharmprojects\appiumsandbox\venv\lib\site-packages\apiritif\loadgen.py", line 259, in parseArgs
+    self.createTests()
+  File "c:\users\alfonso.de.cicco\pycharmprojects\appiumsandbox\venv\lib\site-packages\nose\core.py", line 193, in createTests
+    self.test = self.testLoader.loadTestsFromNames(self.testNames)
+  File "c:\users\alfonso.de.cicco\pycharmprojects\appiumsandbox\venv\lib\site-packages\nose\loader.py", line 481, in loadTestsFromNames
+    return unittest.TestLoader.loadTestsFromNames(self, names, module)
+  File "C:\Users\alfonso.de.cicco\AppData\Local\Programs\Python\Python310\lib\unittest\loader.py", line 220, in loadTestsFromNames
+    suites = [self.loadTestsFromName(name, module) for name in names]
+  File "C:\Users\alfonso.de.cicco\AppData\Local\Programs\Python\Python310\lib\unittest\loader.py", line 220, in <listcomp>
+    suites = [self.loadTestsFromName(name, module) for name in names]
+  File "c:\users\alfonso.de.cicco\pycharmprojects\appiumsandbox\venv\lib\site-packages\nose\loader.py", line 431, in loadTestsFromName
+    return self.loadTestsFromModule(
+  File "c:\users\alfonso.de.cicco\pycharmprojects\appiumsandbox\venv\lib\site-packages\nose\loader.py", line 359, in loadTestsFromModule
+    return self.suiteClass(ContextList(tests, context=module))
+  File "c:\users\alfonso.de.cicco\pycharmprojects\appiumsandbox\venv\lib\site-packages\nose\suite.py", line 428, in __call__
+    return self.makeSuite(tests, context, **kw)
+  File "c:\users\alfonso.de.cicco\pycharmprojects\appiumsandbox\venv\lib\site-packages\nose\suite.py", line 475, in makeSuite
+    suite = self.suiteClass(
+  File "c:\users\alfonso.de.cicco\pycharmprojects\appiumsandbox\venv\lib\site-packages\nose\suite.py", line 159, in __init__
+    super(ContextSuite, self).__init__(tests)
+  File "c:\users\alfonso.de.cicco\pycharmprojects\appiumsandbox\venv\lib\site-packages\nose\suite.py", line 53, in __init__
+    super(LazySuite, self).__init__()
+  File "C:\Users\alfonso.de.cicco\AppData\Local\Programs\Python\Python310\lib\unittest\suite.py", line 22, in __init__
+    self._tests = []
+  File "c:\users\alfonso.de.cicco\pycharmprojects\appiumsandbox\venv\lib\site-packages\nose\suite.py", line 106, in _set_tests
+    if isinstance(tests, collections.Callable) and not is_suite:
+AttributeError: module 'collections' has no attribute 'Callable'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\alfonso.de.cicco\AppData\Local\Programs\Python\Python310\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\alfonso.de.cicco\AppData\Local\Programs\Python\Python310\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\users\alfonso.de.cicco\pycharmprojects\appiumsandbox\venv\lib\site-packages\apiritif\loadgen.py", line 135, in _start_workers
+    self.workers.map(spawn_worker, args)
+  File "C:\Users\alfonso.de.cicco\AppData\Local\Programs\Python\Python310\lib\multiprocessing\pool.py", line 364, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+  File "C:\Users\alfonso.de.cicco\AppData\Local\Programs\Python\Python310\lib\multiprocessing\pool.py", line 771, in get
+    raise self._value
+AttributeError: module 'collections' has no attribute 'Callable'

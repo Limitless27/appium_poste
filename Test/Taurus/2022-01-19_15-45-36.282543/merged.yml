@@ -1,0 +1,12 @@
+---
+execution:
+- concurrency: 1
+  executor: selenium
+  hold-for: 2m
+  iterations: 1
+  ramp-up: 15s
+  scenario: Modulazione
+scenarios:
+  Modulazione:
+    script: /Test/FirstTest.py
+
