@@ -1,7 +1,6 @@
 import contextlib
 import unittest
 
-import self
 from appium import webdriver
 from appium.webdriver.appium_service import AppiumService
 import page_poste

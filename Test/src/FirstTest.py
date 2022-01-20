@@ -1,4 +1,3 @@
-import self as self
 from appium import webdriver
 from appium.webdriver.appium_service import AppiumService
 import time

@@ -1,3 +1,11 @@
+services:
+- appium
+- android-emulator
+
+modules:
+  android-emulator:
+    avd: android10_arm128
+
 execution:
   - executor: selenium
     concurrency: 1
@@ -7,4 +15,4 @@ execution:
     scenario: Modulazione
 scenarios:
     Modulazione:
-      script: C:/Users/alfonso.de.cicco/PycharmProjects/AppiumSandbox/Test/FirstTest.py
+      script: src/FirstTest.py
