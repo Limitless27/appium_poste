@@ -1,0 +1,8 @@
+execution:
+- executor: pytest
+  scenario: pytest-run
+
+scenarios:
+  pytest-run:
+    additional-args: --maxfail=1
+    script: ./src/FirstTest.py
