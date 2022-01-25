@@ -22,3 +22,8 @@ class Methods:
         assert (appium_service.is_listening)
         # start application on device
         driver = webdriver.Remote('http://127.0.0.1:4729/wd/hub', desired_cap)
+        #driver.update_settings({"ignoreUnimportantViews": True})
+        return driver
+
+
+

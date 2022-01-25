@@ -1,0 +1,16 @@
+class Elements:
+    buttonClose = '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView'
+    buttonPacco = '//androidx.recyclerview.widget.RecyclerView[@content-desc="Le tue operazioni"]/android.widget.RelativeLayout[2]/android.widget.RelativeLayout/android.widget.TextView'
+    buttonMenu = '//android.widget.ImageButton[@content-desc="Visualizza Menu dell’applicazione"]'
+    # '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.widget.RelativeLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.view.ViewGroup/android.widget.TextView'
+    inputTextUsername = '//android.widget.LinearLayout[@content-desc="Nome utente"]/android.widget.FrameLayout/android.widget.EditText'
+    inputTextPassword = '//android.widget.LinearLayout[@content-desc="Password"]/android.widget.FrameLayout/android.widget.EditText'
+
+    buttonAccediMenu = '//android.widget.TextView[normalize-space(@text) = "Accedi"]'
+    labelBenvenutoIn = '//android.widget.TextView[normalize-space(@text) = "BENVENUTO IN"]'
+    benvenutoButtons1 = '*//android.widget.LinearLayout/android.widget.LinearLayout[1]'
+    benvenutoButtons2 = '*//android.widget.LinearLayout/android.widget.LinearLayout[2]'
+    benvenutoButtons3 = '*//android.widget.LinearLayout/android.widget.LinearLayout[3]'
+    benvenutoButtons4 = '*//android.widget.LinearLayout/android.widget.LinearLayout[4]'
+    buttonScegliUffPostale = '//android.widget.Button[normalize-space(@text) = "SCEGLI IL TUO UFFICIO POSTALE"]'
+    buttonAccedi = '//android.widget.Button[normalize-space(@text) = "ACCEDI"]'
